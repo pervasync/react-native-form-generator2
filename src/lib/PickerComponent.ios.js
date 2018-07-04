@@ -220,7 +220,7 @@ export class PickerComponent extends React.Component{
         paddingLeft: 10,
         paddingRight: 10,
         justifyContent: 'center',
-        lineHeight: 32
+        lineHeight: 45
       },
       input:{
         paddingLeft: 10,

@@ -204,7 +204,7 @@ let formStyles = StyleSheet.create({
     paddingLeft: 10,
     paddingRight: 10,
     justifyContent: 'center',
-    lineHeight: 32
+    lineHeight: 45
   },
   input:{
     paddingLeft: 10,

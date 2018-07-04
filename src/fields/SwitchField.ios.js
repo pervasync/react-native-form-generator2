@@ -55,7 +55,7 @@ export class SwitchField extends React.Component{
       paddingLeft: 10,
       paddingRight: 10,
       justifyContent: 'center',
-      lineHeight: 32
+      lineHeight: 45
     },
 
   });
