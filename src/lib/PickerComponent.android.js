@@ -10,6 +10,10 @@ var PickerItem = Picker.Item;
   export class PickerComponent extends React.Component{
     constructor(props){
       super(props);
+      if (props.value) {
+        // Ensure initial value is retrieved in Form.getData()
+        if(this.props.onChange) this.props.onChange(props.value, this.valid);
+      }
       this.state = {
         value: props.value || props.label,
       }

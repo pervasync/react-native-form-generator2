@@ -8,6 +8,10 @@ import {Field} from './Field';
 export class LinkComponent extends React.Component{
   constructor(props){
     super(props);
+    if (props.value) {
+      // Ensure initial value is retrieved in Form.getData()
+      if(this.props.onChange) this.props.onChange(props.value, this.valid);
+    }
     this.state = {
     }
   }

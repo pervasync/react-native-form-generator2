@@ -17,6 +17,11 @@ export class InputComponent extends React.Component{
   constructor(props){
     super(props);
 
+    if (props.value) {
+      // Ensure initial value is retrieved in Form.getData()
+      if(this.props.onChange) this.props.onChange(props.value, this.valid);
+    }
+
     this.triggerValidation = this.triggerValidation.bind(this);
     // this.validate = this.validate.bind(this)
     this.validate(props.value);

@@ -8,6 +8,10 @@ import {Field} from './Field';
 export class SwitchComponent extends React.Component{
   constructor(props){
     super(props);
+    if (props.value) {
+      // Ensure initial value is retrieved in Form.getData()
+      if(this.props.onChange) this.props.onChange(props.value, this.valid);
+    }
     this.state = {
       value: props.value,
     }
@@ -40,6 +44,7 @@ export class SwitchComponent extends React.Component{
 
         <Text style={this.props.labelStyle}>{this.props.label}</Text>
           <Switch
+          onTintColor={this.props.onTintColor}
           onValueChange={this.handleValueChange.bind(this)}
           style={this.props.switchStyle}
           value={this.state.value} />

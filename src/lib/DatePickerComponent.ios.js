@@ -10,6 +10,10 @@ import {Field} from './Field';
 export class DatePickerComponent extends React.Component{
   constructor(props){
     super(props);
+    if (props.value) {
+      // Ensure initial value is retrieved in Form.getData()
+      if(this.props.onChange) this.props.onChange(props.value, this.valid);
+    }
     this.state = {
       date: props.date? new Date(props.date) : '',
       isPickerVisible: false
@@ -41,6 +45,9 @@ export class DatePickerComponent extends React.Component{
 
   //      this.refs.picker.measure(this.getPickerLayout.bind(this));
 
+  _isPickerVisible() {
+    return this.state.isPickerVisible
+  }
 
   _togglePicker(event){
     this.setState({isPickerVisible:!this.state.isPickerVisible});
@@ -107,7 +114,7 @@ export class DatePickerComponent extends React.Component{
 
         </View>
       </Field>
-      {(this.state.isPickerVisible)?
+      {(this.props.showing)?
         pickerWrapper : null
       }
 

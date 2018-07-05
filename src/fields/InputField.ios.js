@@ -32,9 +32,9 @@ export class InputField extends React.Component{
           this.props.style
         ]}
       containerStyle={[formStyles.fieldContainer,
-            formStyles.horizontalContainer,
-            this.props.containerStyle,
-          ]}
+          formStyles.horizontalContainer,
+          this.props.containerStyle,
+        ]}
       />
     )
   }
@@ -99,7 +99,6 @@ let formStyles = StyleSheet.create({
     paddingRight: 10,
     justifyContent: 'center',
     lineHeight: 45,
-
   },
   input:{
     paddingLeft: 10,
