@@ -10,9 +10,9 @@ import {Field} from './Field';
 export class DatePickerComponent extends React.Component{
   constructor(props){
     super(props);
-    if (props.value) {
+    if (props.date) {
       // Ensure initial value is retrieved in Form.getData()
-      if(this.props.onChange) this.props.onChange(props.value, this.valid);
+      if(this.props.onChange) this.props.onChange(props.date);
     }
     this.state = {
       date: props.date? new Date(props.date) : '',
