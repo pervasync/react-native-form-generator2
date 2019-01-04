@@ -49,8 +49,8 @@ export class Form extends React.Component{
           key: child.ref || child.type+i,
           fieldRef : child.ref,
           ref: child.ref,
-          onFocus:this.handleFieldFocused.bind(this),
-          onChange:this.handleFieldChange.bind(this, child.ref)
+          onFocus: this.handleFieldFocused.bind(this),
+          onChange: this.handleFieldChange.bind(this, child.ref)
         }
       ));
     }, this);

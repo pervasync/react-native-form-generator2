@@ -10,6 +10,10 @@ var PickerItem = Picker.Item;
   export class PickerComponent extends React.Component{
     constructor(props){
       super(props);
+      if (props.value) {
+        // Ensure initial value is retrieved in Form.getData()
+        if(this.props.onChange) this.props.onChange(props.value, this.valid);
+      }
       this.state = {
         value: props.value || props.label,
       }
@@ -151,7 +155,7 @@ var PickerItem = Picker.Item;
         paddingLeft: 10,
         paddingRight: 10,
         justifyContent: 'center',
-        lineHeight: 32
+        lineHeight: 45
       },
       input:{
         paddingLeft: 10,
