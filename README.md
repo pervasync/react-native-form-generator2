@@ -1,14 +1,14 @@
-React Native Form Generator
+React Native Form Generator2
 ================
 
-Generate forms with native look and feel in a breeze
+Fork of react-native-form-generator to allow fixes
 
-[![NPM](https://nodei.co/npm/react-native-form-generator.png)](https://nodei.co/npm/react-native-form-generator/)
+[![NPM](https://nodei.co/npm/react-native-form-generator2.png)](https://nodei.co/npm/react-native-form-generator2/)
 
 
 ![rnformgendatetimefields](https://cloud.githubusercontent.com/assets/107390/16767512/1dfbf33c-4840-11e6-8085-1521b6d0c3ce.gif)
 
-![react-native-form-generator](https://cloud.githubusercontent.com/assets/107390/12499709/edc1c298-c07a-11e5-916c-394de83ebe51.gif)
+![react-native-form-generator2](https://cloud.githubusercontent.com/assets/107390/12499709/edc1c298-c07a-11e5-916c-394de83ebe51.gif)
 
 ## Components
 * Picker
@@ -40,7 +40,7 @@ Generate forms with native look and feel in a breeze
 
 ## Installation
 ```
-    npm install --save react-native-form-generator
+    npm install --save react-native-form-generator2
 ```
 ## I'm actively working on this project
 
@@ -75,7 +75,7 @@ import {
 import { Form,
   Separator,InputField, LinkField,
   SwitchField, PickerField,DatePickerField,TimePickerField
-} from 'react-native-form-generator';
+} from 'react-native-form-generator2';
 
 export class FormView extends React.Component{
   constructor(props){
@@ -349,7 +349,7 @@ check here https://medium.com/@michaelcereda/react-native-forms-the-right-way-31
 ![react-native-form-generator-keyevents](https://cloud.githubusercontent.com/assets/107390/12499708/edb63838-c07a-11e5-9fe4-87979285ccc0.gif)
 
 ### Custom Fields
-With react-native-form-generator is extremely easy to create your own custom fields.
+With react-native-form-generator2 is extremely easy to create your own custom fields.
 You just need to know that:
 1. Every field is a react component
 2. Evey field will receive 3 props from the Form object:
@@ -400,7 +400,7 @@ You can decide to wrap every field in a component to mantain design uniformity a
 
 Battle tested example
 ```javascript
-import {PickerField, LinkField} from 'react-native-form-generator';
+import {PickerField, LinkField} from 'react-native-form-generator2';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 let {
