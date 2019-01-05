@@ -148,7 +148,7 @@ export class PickerComponent extends React.Component{
 
         </View>
         </Field>
-        {(this.props.showing)?
+        {(this.state.isPickerVisible)?
           pickerWrapper : null
         }
 

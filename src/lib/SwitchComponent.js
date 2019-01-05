@@ -59,7 +59,7 @@ export class SwitchComponent extends React.Component{
 SwitchComponent.propTypes = {
   labelStyle: Text.propTypes.style,
   containerStyle: ViewPropTypes.style,
-  switchStyle: Switch.propTypes.style
+  switchStyle: ViewPropTypes.style
 }
 
 
